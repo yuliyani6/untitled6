@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions", "hooks"},
         plugin = {
                 "pretty",
-                "html:build/reports/web-report.html",
-                "json:build/reports/web-report.json"
+                "html:target/web-report.html",
+                "json:target/web-report.json"
         }
 )
 public class TestRunner {}
