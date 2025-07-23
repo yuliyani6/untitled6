@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login functionality on saucedemo" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-07-23T11:05:50" hostname="LAPTOP-KNP6RUNT" time="105.754">
+  <properties/>
+  <testcase name="Login with valid credentials" classname="Login functionality on saucedemo" time="102.423"/>
+  <testcase name="Login with invalid credentials" classname="Login functionality on saucedemo" time="3.331"/>
+  <system-out><![CDATA[
+Scenario: Login with valid credentials                                   ?[90m# src/test/resources/features/login.feature:3?[0m
+  ?[32mGiven ?[0m?[32mI open the login page?[0m                                            ?[90m# stepdefinitions.LoginSteps.i_open_the_login_page()?[0m
+  ?[32mWhen ?[0m?[32mI login with username ?[0m?[32m?[1m"standard_user"?[0m?[32m and password ?[0m?[32m?[1m"secret_sauce"?[0m ?[90m# stepdefinitions.LoginSteps.i_login_with_username_and_password(java.lang.String,java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should be redirected to the inventory page?[0m                      ?[90m# stepdefinitions.LoginSteps.i_should_be_redirected_to_the_inventory_page()?[0m
+
+Scenario: Login with invalid credentials                                  ?[90m# src/test/resources/features/login.feature:8?[0m
+  ?[32mGiven ?[0m?[32mI open the login page?[0m                                             ?[90m# stepdefinitions.LoginSteps.i_open_the_login_page()?[0m
+  ?[32mWhen ?[0m?[32mI login with username ?[0m?[32m?[1m"invalid_user"?[0m?[32m and password ?[0m?[32m?[1m"wrong_password"?[0m ?[90m# stepdefinitions.LoginSteps.i_login_with_username_and_password(java.lang.String,java.lang.String)?[0m
+  ?[32mThen ?[0m?[32mI should see an error message?[0m                                      ?[90m# stepdefinitions.LoginSteps.i_should_see_an_error_message()?[0m
+]]></system-out>
+  <system-err><![CDATA[Jul 23, 2025 6:07:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 23, 2025 6:07:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.158. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jul 23, 2025 6:07:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 23, 2025 6:07:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.158. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
